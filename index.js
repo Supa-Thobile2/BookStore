@@ -1,3 +1,7 @@
+
+
+
+
 let bookCollection = [
   {
       "title" : "Return To The Source",
@@ -73,66 +77,45 @@ function fetchBook(chapters){
 
 fetchBooks()
 
+/**
+ 
+This section of code is for the creation of new users and storing them in an array
+ */
+
+let users = []; // The empty array to store the diffrernt user objects
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- let user = []; 
-
- function registerUser(){
-    
-   let userName = document.getElementById("fname").value;
-     console.log(userName);
+   // The function to create the different user 
+   /*
    
-   let lastName =document.getElementById("lname").value;
-     
-   console.log(lastName);
-   let phoneNumber = document.getElementById("pnumber").value;
-   console.log(phoneNumber);
-   let email = document.getElementById("email").value;
-   console.log(email);
-   let image = document.getElementById("myFile").value;
-   console.log(image);
-
+   This section has been quite achallenge to com-plete as it required the application of different rules that combined arrays, get information from the dom and creation of objects. I learned about the this method and helped me resolve some of the problems I was facing.
    
-    
-    
-    
    
- }
+   
+   */ 
+function User(fname, lname, email, pnumber){
+        this.fname = fname;
+        this.lname = lname;
+        this.email = email;
+        this.pnumber = pnumber;
+
+       
+    }
+    
+    User();
+
+    //This section of code of code is still a work in progress since I still have to pass the values from the form to values created in the object
+
+    user1 = new User("Themba", "Mqolo","thembamqolo@gmail.com", 012876);
+    user2 = new User("Themba", "Mqolo","thembamqolo@gmail.com", 012874);
+    user3 = new User("Themba", "Mqolo","thembamqolo@gmail.com", 012872);
+
+    users.push(user1,user2,user3);
+    console.log(users);
 
 
 
-function verifyUser(){
 
-  let userName = document.getElementById("fname").value;
-  console.log(userName);
 
-  let password = document.getElementById("pwd").value;
-  console.log(userName);
-
-  if( pwd === ""){
-  }
-
-}
-console.log(verifyUser());
-
+           
 
