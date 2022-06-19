@@ -1,82 +1,4 @@
 
-
-
-
-let bookCollection = [
-  {
-      "title" : "Return To The Source",
-       "pages" : 193,
-      "chapters": 113,
-      "image" :  'download.jpg',
-
-   },
-
-  {
-      "title" : "Thomas Sankara Speaks",
-       "pages" : 193,
-      "chapters": 145,
-
-   },
-
-   {
-      "title" : "Africa Must Unite",
-       pages : 197,
-      "chapters": 225,
-
-   },
-
-   {
-      "title" : "Here Is A Tree",
-       "pages" : 193,
-      "chapters": 593,
-      
-   },
-];
-
-
-
-
-
-
-function fetchBooks(title){
-
-    for(let i = 0; i < bookCollection.length; i++){
-    ; // logs the complete object for book collection to the console//allows for values to be passed in and be evaluated
-      //return bookCollection[i].title
-
-
-      if(bookCollection[i].title === title){
-         return bookCollection[i].title
-      }
-     
-
-     
-     
-    
-};
-};
-
-
-function fetchBook(chapters){
-
-   for(let i = 0; i < bookCollection.length; i++){
-   ; // logs the complete object for book collection to the console//allows for values to be passed in and be evaluated
-     //return bookCollection[i].title
-
-
-     if(bookCollection[i].chapters === chapters){
-        return bookCollection[i].chapters
-     }
-    
-
-    
-    
-   
-};
-};
-
-fetchBooks()
-
 /**
  
 This section of code is for the creation of new users and storing them in an array
@@ -106,15 +28,97 @@ function User(fname, lname, email, pnumber){
 
     //This section of code of code is still a work in progress since I still have to pass the values from the form to values created in the object
 
-    user1 = new User("Themba", "Mqolo","thembamqolo@gmail.com", 012876);
-    user2 = new User("Themba", "Mqolo","thembamqolo@gmail.com", 012874);
-    user3 = new User("Themba", "Mqolo","thembamqolo@gmail.com", 012872);
-
-    users.push(user1,user2,user3);
+    users = new User();
     console.log(users);
 
 
 
+
+
+
+
+   
+
+
+
+
+
+
+
+// let bookCollection = [
+//   {
+//       "title" : "Return To The Source",
+//        "pages" : 193,
+//       "chapters": 113,
+//       "image" :  'download.jpg',
+
+//    },
+
+//   {
+//       "title" : "Thomas Sankara Speaks",
+//        "pages" : 193,
+//       "chapters": 145,
+
+//    },
+
+//    {
+//       "title" : "Africa Must Unite",
+//        pages : 197,
+//       "chapters": 225,
+
+//    },
+
+//    {
+//       "title" : "Here Is A Tree",
+//        "pages" : 193,
+//       "chapters": 593,
+      
+//    },
+// ];
+
+
+
+
+
+
+// function fetchBooks(title){
+
+//     for(let i = 0; i < bookCollection.length; i++){
+//     ; // logs the complete object for book collection to the console//allows for values to be passed in and be evaluated
+//       //return bookCollection[i].title
+
+
+//       if(bookCollection[i].title === title){
+//          return bookCollection[i].title
+//       }
+     
+
+     
+     
+    
+// };
+// };
+
+
+// function fetchBook(chapters){
+
+//    for(let i = 0; i < bookCollection.length; i++){
+//    ; // logs the complete object for book collection to the console//allows for values to be passed in and be evaluated
+//      //return bookCollection[i].title
+
+
+//      if(bookCollection[i].chapters === chapters){
+//         return bookCollection[i].chapters
+//      }
+    
+
+    
+    
+   
+// };
+// };
+
+// fetchBooks()
 
 
            
