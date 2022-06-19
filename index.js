@@ -5,7 +5,7 @@ This section of code is for the creation of new users and storing them in an arr
  */
 
 let users = []; // The empty array to store the diffrernt user objects
-
+console.log(users);
 
    // The function to create the different user 
    /*
@@ -15,6 +15,13 @@ let users = []; // The empty array to store the diffrernt user objects
    
    
    */ 
+
+   let firstName = document.getElementById("fname").value;
+   let surname = document.getElementById("lname").value;
+   let phoneNumber = document.getElementById("pnumber").value;
+   let email = document.getElementById("email").value;
+   let submit = document.getElementById("btn");
+  
 function User(fname, lname, email, pnumber){
         this.fname = fname;
         this.lname = lname;
@@ -28,10 +35,10 @@ function User(fname, lname, email, pnumber){
 
     //This section of code of code is still a work in progress since I still have to pass the values from the form to values created in the object
 
-    users = new User();
+    users = new User(firstName, surname, phoneNumber, email);
     console.log(users);
 
-
+    submit.addEventListener("click", User())
 
 
 
